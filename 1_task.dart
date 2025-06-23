@@ -13,36 +13,26 @@ void main() {
   if (number > 60) {
     print("$number is an even 50");
   } else
-  print("$number is an less 50");
-  
-  if (number <100) {
+    print("$number is an less 50");
+
+  if (number < 100) {
     print("$number is an less 100.");
-          } else {
-      print("$number is an even number.");
-    }
-  
-  
+  } else {
+    print("$number is an even number.");
+  }
+
   if (number % 5 == 0) {
     print("$number is divisible by 5 without a remainder.");
   } else {
     print("$number is divisible by 5 with a remainder.");
   }
-  
 
+  bool hasMoney = true;
+  bool isStoreOpen = false;
 
+  bool canBuy = hasMoney && isStoreOpen;
+  print('Can bay: $canBuy');
 
-
-
-
-
-
-  
-  //if (number <100
-  //  print("$number is an odd 100.");
-  //  if (number % 5 == 0)) {
-  //    print("$number is an even number.");
-  //  } else {
-  //    print("$number is an odd number.");
-  //  }
- // }
+  bool needToWait = !hasMoney || !isStoreOpen;
+  print('Need Wait: $needToWait');
 }
