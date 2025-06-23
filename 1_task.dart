@@ -43,6 +43,18 @@ void main() {
   if (veryCold.isNotEmpty) {
     print("The weather is $veryCold");
   }
-  
-  
-  }
+
+  double score = 0;
+  int correctAnswers = 17;
+  int mistakes = 3;
+  int totalQuestions = 20;
+
+  score += correctAnswers * 10;
+  print("Your score is: $score");
+  score -= mistakes * 5;
+  print("Your score is: $score");
+  score *= 2;
+  print("Your score is: $score");
+  score /= totalQuestions;
+  print("Your score is: $score");
+}
