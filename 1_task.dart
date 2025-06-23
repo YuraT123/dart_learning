@@ -35,4 +35,14 @@ void main() {
 
   bool needToWait = !hasMoney || !isStoreOpen;
   print('Need Wait: $needToWait');
-}
+
+  int temperature = 5;
+  String weather = temperature > 25 ? "warm" : "cold";
+  print("The weather is $weather");
+  String veryCold = temperature < 10 ? "very cold" : "";
+  if (veryCold.isNotEmpty) {
+    print("The weather is $veryCold");
+  }
+  
+  
+  }
