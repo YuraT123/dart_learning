@@ -58,8 +58,8 @@ void main() {
   score /= totalQuestions;
   print("Your score is: $score");
 
- int examScore = 10;
- 
+  int examScore = 10;
+
   if (examScore > 90) {
     print("Відмінно");
   } else if (examScore >= 75) {
@@ -68,12 +68,37 @@ void main() {
     print("Задовільно");
   } else {
     print("Не здано");
-       if (examScore < 20) {
+    if (examScore < 20) {
       print("Повторити курс");
     }
   }
+
+  int dayNumber = 6;
+  switch (dayNumber) {
+    case 1:
+      print("Понеділок");
+      break;
+    case 2:
+      print("Вівторок");
+      break;
+    case 3:
+      print("Середа");
+      // break;
+    case 4:
+      print("Четвер");
+      break;
+    case 5:
+      print("Пʼятниця");
+      break;
+    case 6:
+      print("Субота");
+      print("Вихідний день 🎉");
+      break;
+    case 7:
+      print("Неділя");
+      print("Вихідний день 🎉");
+      break;
+    default:
+      print("Невірний номер дня");
+  }
 }
-
-
-
-
