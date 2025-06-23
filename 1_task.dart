@@ -57,4 +57,23 @@ void main() {
   print("Your score is: $score");
   score /= totalQuestions;
   print("Your score is: $score");
+
+ int examScore = 10;
+ 
+  if (examScore > 90) {
+    print("Відмінно");
+  } else if (examScore >= 75) {
+    print("Добре");
+  } else if (examScore >= 60) {
+    print("Задовільно");
+  } else {
+    print("Не здано");
+       if (examScore < 20) {
+      print("Повторити курс");
+    }
+  }
 }
+
+
+
+
