@@ -83,7 +83,7 @@ void main() {
       break;
     case 3:
       print("Середа");
-      // break;
+    // break;
     case 4:
       print("Четвер");
       break;
@@ -101,4 +101,19 @@ void main() {
     default:
       print("Невірний номер дня");
   }
+
+  print("Всі числа від 1 до 10:");
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+  print("Парні числа від 1 до 10:");
+  for (int i = 2; i <= 10; i += 2) {
+    print( i);
+  }
+int sum = 0;
+  for (int i = 1; i <= 10; i++) {
+    sum += i;
+  }
+  print("Сума чисел від 1 до 10: $sum");
+
 }
