@@ -116,4 +116,17 @@ int sum = 0;
   }
   print("Сума чисел від 1 до 10: $sum");
 
+int number1 = 10;
+
+    while (number1 >= 0) {
+        if (number1 % 2 == 0) {
+      print("Парне число: $number1");
+    } else {
+      print("Непарне число: $number1");
+    }
+        number1--;
+  }
+
+
+
 }
